@@ -85,12 +85,15 @@ main {
 
 .categories {
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .category {
     padding: 5px;
     background-color: rgb(226, 204, 172);
-    margin: 0.25rem;
+    margin: 0.25rem;;
 }
 .category:hover {
 
@@ -111,6 +114,10 @@ button:hover {
 .sponsors {
     display: grid;
     text-align: center;
+    border: 1px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .sponsors > div {
@@ -126,6 +133,9 @@ button:hover {
 
     padding: 2rem;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
 }
 
 #footer > div {
@@ -135,10 +145,10 @@ button:hover {
 
 /* ===== grid modifiers ===== */
 
-.col-span-2 {
-
+.row-span-2 {
+    grid-row-end: span 2;
 }
 
-.row-span-2 {
-
+.col-span-2 {
+    grid-column-end: span 2;
 }
